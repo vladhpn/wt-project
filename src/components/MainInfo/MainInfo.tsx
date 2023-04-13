@@ -11,7 +11,7 @@ export const MainInfo = () => {
               src={petIcon}
               alt="Rounded avatar"
             />
-            <h3 className="ml-4 text-4xl font-bold text-white ">Чак</h3>
+            <h3 className="ml-4 text-4xl font-bold text-white ">Марсель</h3>
           </div>
 
           <div className="mb-4 lg:mb-0">
@@ -32,15 +32,15 @@ export const MainInfo = () => {
           </div>
           <div className="mb-4 lg:mb-0">
             <p className="mb-2 text-xl text-stone-700">Дата народження</p>
-            <p className="text-xl  text-white">09.01.2020</p>
+            <p className="text-xl  text-white">02.10.2018</p>
           </div>
           <div className="mb-4 lg:mb-0">
             <p className="mb-2 text-xl  text-stone-700">Вага</p>
-            <p className="text-xl  text-white">3 кг</p>
+            <p className="text-xl  text-white">5.4 кг</p>
           </div>
           <div className="mb-4 lg:mb-0">
             <p className="mb-2 text-xl text-stone-700">Зріст</p>
-            <p className="text-xl text-white">30см</p>
+            <p className="text-xl text-white">35 см</p>
           </div>
         </div>
       </div>
