@@ -1,9 +1,11 @@
 import { MainInfo } from '../../components/MainInfo/MainInfo';
+import { Vaccination } from '../../components/Vaccination/Vaccination';
 
 const Main = () => {
   return (
     <div className="container mx-auto">
       <MainInfo />
+      <Vaccination />
       {/* <div className=" p-4 w-[280px]">
         <div className=" p-4 bg-white rounded-lg shadow dark:bg-gray-800 md:p-8">
           <div className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
