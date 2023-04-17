@@ -1,0 +1,12 @@
+.main_container {
+    @apply grid grid-rows-1 grid-flow-col gap-1;
+}
+
+.form_label {
+    @apply block mb-2  font-medium text-gray-500;
+    @layer text-md;
+}
+
+.form_input {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-2xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+}

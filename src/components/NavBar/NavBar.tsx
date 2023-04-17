@@ -1,7 +1,7 @@
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 
-import { Sidebar } from '../Sidebar/SideBar';
+import { Sidebar } from '../Sidebar/Sidebar';
 
 import './NavBar.scss';
 
