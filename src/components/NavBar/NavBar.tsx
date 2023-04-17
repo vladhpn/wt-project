@@ -1,7 +1,7 @@
 import { IconContext } from 'react-icons';
 import { Link } from 'react-router-dom';
 
-import { Sidebar1 } from '../Sidebar/SideBar1';
+import { Sidebar } from '../Sidebar/SideBar';
 
 import './NavBar.scss';
 
@@ -11,7 +11,7 @@ export const NavBar = () => {
       <IconContext.Provider value={{ color: 'undefined' }}>
         <div className="navbar_container">
           <ul className="navbar_list">
-            {Sidebar1.map(({ title, id, path, icon }) => {
+            {Sidebar.map(({ title, id, path, icon }) => {
               return (
                 <div key={id}>
                   <Link to={path} className="navbar_item ">
