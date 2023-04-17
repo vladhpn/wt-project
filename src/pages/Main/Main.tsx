@@ -1,32 +1,18 @@
-import { MainInfo } from '../../components/MainInfo/MainInfo';
-import { Vaccination } from '../../components/Vaccination/Vaccination';
+import { Outlet } from 'react-router';
+
+import { Header } from '../../components/Header/Header';
+import { NavBar } from '../../components/NavBar/NavBar';
 
 const Main = () => {
   return (
-    <div className="container mx-auto">
-      <MainInfo />
-      <Vaccination />
-      {/* <div className=" p-4 w-[280px]">
-        <div className=" p-4 bg-white rounded-lg shadow dark:bg-gray-800 md:p-8">
-          <div className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-            <h3 className="mb-3 text-2xl font-bold text-gray-900 dark:text-white">
-              Вага
-            </h3>
-            <p className="text-xl  text-gray-900 dark:text-white">4 кг</p>
-          </div>
+    <div className="h-screen">
+      <Header />
+      <div className="flex">
+        <NavBar />
+        <div className="p-5 w-full h-full">
+          <Outlet />
         </div>
       </div>
-
-      <div className="p-4 w-[280px]">
-        <div className="p-4 bg-white rounded-lg shadow dark:bg-gray-800 md:p-8">
-          <div className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-            <h3 className="mb-3 text-2xl font-bold text-gray-900 dark:text-white">
-              Зріст
-            </h3>
-            <p className="text-xl text-gray-900 dark:text-white">30 см</p>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
