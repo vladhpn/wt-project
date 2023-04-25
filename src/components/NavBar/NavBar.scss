@@ -1,5 +1,5 @@
 .navbar_container {
-    @apply h-screen px-3 py-4 overflow-y-auto bg-gray-500 w-[200px];
+    @apply bg-cl-secondary h-screen  w-52 border-2 px-3 py-4 overflow-y-auto;
 }
 
 .navbar_list {
@@ -7,5 +7,9 @@
 }
 
 .navbar_item {
-    @apply flex items-center p-2 text-white rounded-lg hover:bg-gray-700;
+    @apply flex  items-center p-2 text-cl-title rounded-lg cursor-pointer group-hover:bg-cl-accent group-hover:text-cl-secondary;
+}
+
+.icons {
+    @apply text-cl-title group-hover:text-cl-secondary;
 }

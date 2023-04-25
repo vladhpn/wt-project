@@ -45,18 +45,39 @@ export const Calendar = () => {
 
       {/* CALENDAR SIDEBAR */}
       <div className="flex flex-row">
-        <div className="basis-1/5">
+        <div className="w-1/5 mr-4">
           <h4>Events</h4>
           <ul>
             <li>
               <p>
-                <span></span>
+                <span>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Reprehenderit quis laboriosam non debitis? Quibusdam dolorem,
+                  soluta nisi ratione ullam voluptas perferendis doloribus eum
+                  quos vel optio adipisci, cupiditate modi reiciendis. Earum
+                  fugiat possimus sequi recusandae quia? Est voluptates alias
+                  beatae optio facilis hic error! Quo aliquam aliquid, eius
+                  voluptas animi qui doloribus totam nobis voluptate provident
+                  consequuntur, libero ab. Dicta. Repellat, quod reprehenderit.
+                  Minus, vitae. Beatae et, dolorum, iste impedit illo quos
+                  accusamus dolorem unde voluptates quo molestiae aliquid
+                  temporibus fugit, eveniet perspiciatis dolor sunt eaque.
+                  Perspiciatis id sunt obcaecati. Placeat, quidem consequatur!
+                  Nihil illum officiis perferendis hic animi maxime similique
+                  alias, porro cupiditate voluptate expedita quidem temporibus
+                  sit ipsum dolorum, consectetur, modi quos sequi? Eligendi in
+                  doloribus sint incidunt! Eum animi corrupti esse? Eveniet
+                  reprehenderit, voluptas repudiandae omnis et libero quasi,
+                  vitae quae illum possimus, porro eaque earum a? Provident,
+                  autem. Velit sed alias nostrum nulla nesciunt, repellat
+                  dolore.
+                </span>
               </p>
             </li>
           </ul>
         </div>
 
-        <div className="basis-4/5">
+        <div className="w-4/5">
           <FullCalendar
             height="80vh"
             plugins={[

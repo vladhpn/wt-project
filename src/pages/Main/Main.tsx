@@ -9,7 +9,7 @@ const Main = () => {
       <Header />
       <div className="flex">
         <NavBar />
-        <div className="p-5 w-full h-full">
+        <div className="p-5 w-full h-screen bg-cl-main-bg">
           <Outlet />
         </div>
       </div>

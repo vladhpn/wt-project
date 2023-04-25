@@ -9,14 +9,14 @@ export const NavBar = () => {
   return (
     <>
       <IconContext.Provider value={{ color: 'undefined' }}>
-        <div className="navbar_container">
+        <div className="navbar_container ">
           <ul className="navbar_list">
             {Sidebar.map(({ title, id, path, icon }) => {
               return (
-                <div key={id}>
+                <div key={id} className="group">
                   <Link to={path} className="navbar_item ">
                     <span className="mr-2">{title}</span>
-                    <p>{icon}</p>
+                    <p className="icons">{icon}</p>
                   </Link>
                 </div>
               );
