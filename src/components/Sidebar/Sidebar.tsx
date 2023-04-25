@@ -1,5 +1,6 @@
 import { BiInjection } from 'react-icons/bi';
 import { GiMedicines } from 'react-icons/gi';
+import { GoCalendar } from 'react-icons/go';
 import { MdPets } from 'react-icons/md';
 
 export const Sidebar = [
@@ -20,5 +21,11 @@ export const Sidebar = [
     title: 'Лікування',
     path: '/treatment',
     icon: <GiMedicines />,
+  },
+  {
+    id: '4',
+    title: 'Календар',
+    path: '/calendar',
+    icon: <GoCalendar />,
   },
 ];
