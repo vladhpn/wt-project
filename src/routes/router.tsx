@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import { Calendar } from '../components/Calendar/Calendar';
 import { MainInfo } from '../components/MainInfo/MainInfo';
 import { Treatment } from '../components/Treatment/Treatment';
 import { Vaccination } from '../components/Vaccination/Vaccination';
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: '/treatment',
         element: <Treatment />,
+      },
+      {
+        path: '/calendar',
+        element: <Calendar />,
       },
     ],
   },
