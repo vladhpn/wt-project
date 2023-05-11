@@ -1,4 +1,20 @@
+import { useNavigate } from 'react-router';
+import { useRecoilState } from 'recoil';
+
+import { logout } from '../../core/api';
+import { isLoginRecoil } from '../../core/state/globalState';
+
 export const Header = () => {
+  const [isLogin, setIslogin] = useRecoilState(isLoginRecoil);
+
+  const navigate = useNavigate();
+
+  const logOut = () => {
+    logout();
+    navigate('auth/login', { replace: true });
+    setIslogin(false);
+  };
+
   return (
     <nav className="px-4 py-2.5 border-b border-cl-main">
       <div className="flex flex-wrap justify-between items-center">
@@ -18,6 +34,26 @@ export const Header = () => {
             className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
             Log in
           </a>
+          {isLogin && (
+            <button
+              onClick={logOut}
+              type="button"
+              className="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500">
+              <svg
+                aria-hidden="true"
+                className="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"></path>
+              </svg>
+              <span className="sr-only">Icon description</span>
+            </button>
+          )}
+
           <button
             data-collapse-toggle="mobile-menu-2"
             type="button"
